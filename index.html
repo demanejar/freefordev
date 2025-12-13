@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free for Developers - Discover Free Services & Tools</title>
+    <meta name="description"
+        content="A comprehensive list of free software (SaaS, PaaS, IaaS, etc.) and services with free developer tiers for infrastructure developers, DevOps, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="10" fill="url(#gradient1)" />
+                        <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <defs>
+                            <linearGradient id="gradient1" x1="0" y1="0" x2="40" y2="40">
+                                <stop offset="0%" stop-color="#667eea" />
+                                <stop offset="100%" stop-color="#764ba2" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>Free for Devs</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#categories" class="nav-link">Categories</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="https://github.com/ripienaar/free-for-dev" target="_blank" class="nav-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+            </nav>
+
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span>1600+ Contributors</span>
+                </div>
+                <h1 class="hero-title">
+                    Discover <span class="gradient-text">Free Services</span><br>
+                    for Developers
+                </h1>
+                <p class="hero-description">
+                    A curated list of software (SaaS, PaaS, IaaS) and other offerings with free developer tiers.<br>
+                    Perfect for infrastructure developers, DevOps practitioners, and open-source authors.
+                </p>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <div class="search-box">
+                        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="text" id="searchInput" placeholder="Search services, tools, or categories..."
+                            class="search-input">
+                        <button class="search-clear" id="clearSearch" style="display: none;">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalServices">500+</div>
+                        <div class="stat-label">Free Services</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" id="totalCategories">40+</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Free</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="floating-element" style="top: 20%; left: 10%;"></div>
+        <div class="floating-element" style="top: 60%; right: 15%;"></div>
+        <div class="floating-element" style="bottom: 20%; left: 20%;"></div>
+    </header>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Browse by <span class="gradient-text">Category</span></h2>
+                <p class="section-description">Explore hundreds of free services organized by category</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All Categories</button>
+                <button class="filter-btn" data-category="major-cloud-providers">Cloud Providers</button>
+                <button class="filter-btn" data-category="apis-data-and-ml">APIs & Data</button>
+                <button class="filter-btn" data-category="ci-and-cd">CI/CD</button>
+                <button class="filter-btn" data-category="testing">Testing</button>
+                <button class="filter-btn" data-category="monitoring">Monitoring</button>
+                <button class="filter-btn" data-category="managed-data-services">Databases</button>
+                <button class="filter-btn" data-category="web-hosting">Hosting</button>
+                <button class="filter-btn" data-category="email">Email</button>
+                <button class="filter-btn"
+                    data-category="authentication-authorization-and-user-management">Auth</button>
+            </div>
+
+            <!-- Categories Grid -->
+            <div class="categories-grid" id="categoriesGrid">
+                <!-- Categories will be loaded here by JavaScript -->
+            </div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">🔍</div>
+                <h3>No results found</h3>
+                <p>Try adjusting your search or filter to find what you're looking for.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Modal -->
+    <div class="modal-overlay" id="servicesModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <div class="modal-title-section">
+                    <div class="modal-icon" id="modalIcon">🔌</div>
+                    <div>
+                        <h2 class="modal-title" id="modalTitle">Category Services</h2>
+                        <p class="modal-subtitle" id="modalSubtitle">Browse all available services</p>
+                    </div>
+                </div>
+                <button class="modal-close" id="modalClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="modal-search">
+                <svg class="modal-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <input type="text" id="modalSearchInput" placeholder="Search services..." class="modal-search-input">
+            </div>
+
+            <div class="modal-body" id="modalBody">
+                <!-- Services will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About <span class="gradient-text">Free for Devs</span></h2>
+                    <p>Developers and Open Source authors now have many services offering free tiers, but finding them
+                        all takes time to make informed decisions.</p>
+                    <p>This is a list of software (SaaS, PaaS, IaaS, etc.) and other offerings with free developer
+                        tiers.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">✅</div>
+                            <div>
+                                <h4>Always Free Tiers</h4>
+                                <p>Services must offer a free tier for at least a year</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🔒</div>
+                            <div>
+                                <h4>Security First</h4>
+                                <p>No services that restrict TLS to paid-only tiers</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌟</div>
+                            <div>
+                                <h4>Community Driven</h4>
+                                <p>Built by 1600+ contributors from around the world</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="https://github.com/ripienaar/free-for-dev" target="_blank" class="btn btn-primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                            Contribute on GitHub
+                        </a>
+                        <a href="#categories" class="btn btn-secondary">Explore Services</a>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <div class="visual-header">
+                            <div class="visual-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="visual-content">
+                            <div class="code-line"><span class="code-keyword">const</span> <span
+                                    class="code-variable">freeServices</span> = <span class="code-bracket">{</span>
+                            </div>
+                            <div class="code-line indent1"><span class="code-property">cloud:</span> <span
+                                    class="code-string">'AWS, GCP, Azure'</span>,</div>
+                            <div class="code-line indent1"><span class="code-property">databases:</span> <span
+                                    class="code-string">'MongoDB, PostgreSQL'</span>,</div>
+                            <div class="code-line indent1"><span class="code-property">hosting:</span> <span
+                                    class="code-string">'Vercel, Netlify'</span>,</div>
+                            <div class="code-line indent1"><span class="code-property">apis:</span> <span
+                                    class="code-string">'500+ services'</span></div>
+                            <div class="code-line"><span class="code-bracket">}</span>;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="10" fill="url(#gradient2)" />
+                            <path d="M12 20L18 26L28 14" stroke="white" stroke-width="3" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="gradient2" x1="0" y1="0" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#667eea" />
+                                    <stop offset="100%" stop-color="#764ba2" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>Free for Devs</span>
+                    </div>
+                    <p>Discover free services and tools for developers. Built with ❤️ by the community.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <a href="https://github.com/ripienaar/free-for-dev" target="_blank">GitHub Repository</a>
+                        <a href="https://github.com/ripienaar/free-for-dev/blob/master/README.md"
+                            target="_blank">Documentation</a>
+                        <a href="https://github.com/ripienaar/free-for-dev/blob/master/CONTRIBUTING.md"
+                            target="_blank">Contributing</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <a href="https://github.com/ripienaar/free-for-dev/issues" target="_blank">Report Issue</a>
+                        <a href="https://github.com/ripienaar/free-for-dev/pulls" target="_blank">Pull Requests</a>
+                        <a href="https://www.trackawesomelist.com/ripienaar/free-for-dev" target="_blank">Track
+                            Updates</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Free for Devs. Open source project under MIT License.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/ripienaar/free-for-dev" target="_blank" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
